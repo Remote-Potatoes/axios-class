@@ -1,2 +1,38 @@
 <h1>{{title}} 🚀</h1>
-<p>Welcome Ironhacker!</p>
+<p>Rick & Morty API!</p>
+
+<h2 style="text-align: center;">Character of the day! ⬇️</h2>
+<button id="getAnotherChar">Get Another Character!</button>
+{{#if character}}
+  {{#with character}}
+    <div class="card">
+      <img
+        class="card--avatar"
+        src="{{avatar}}"
+        alt=""
+        width="300"
+        height="300"
+      />
+      <div class="card--content">
+        <h2>Name: <span id="char-name">{{name}}</span></h2>
+        <p>Gender: <span id="char-gender">{{gender}}</span></p>
+        <p>Status: <span id="char-status">{{status}}</span></p>
+      </div>
+    </div>
+  {{/with}}
+
+{{else}}
+
+  <div class="card">
+    <img
+      class="card--avatar"
+      src="https://rickandmortyapi.com/api/character/avatar/361.jpeg"
+      alt=""
+    />
+    <div>
+      <h2>Name: Toxic Rick</h2>
+      <p>Gender: Male</p>
+      <p>Status: Dead</p>
+    </div>
+  </div>
+{{/if}}

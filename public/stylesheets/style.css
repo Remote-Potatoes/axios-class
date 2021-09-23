@@ -10,3 +10,23 @@ a {
 h1 {
   color: 15px;
 }
+
+.card {
+  max-width: 600px;
+  background-color: #676767;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: hsla(0, 0%, 0%, 0.527) 0px 1px 4px;
+  margin: 0 auto;
+}
+.card--avatar {
+  border-radius: 50%;
+  box-shadow: hsl(210, 4%, 31%) 0px 8px 24px;
+}
+.card--content {
+  display: grid;
+  padding: 1rem;
+}
